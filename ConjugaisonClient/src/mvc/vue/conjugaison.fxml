@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvc.controlleur.ConjugaisonController">
+   <children>
+      <AnchorPane fx:id="pane_connexion" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="31.0" prefHeight="37.0" prefWidth="391.0" text="ConjugOmax " textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="100.0" text="Veuillez rentrer les informations de connexion au serveur">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_IP" layoutX="151.0" layoutY="162.0" prefHeight="25.0" prefWidth="418.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_port" layoutX="151.0" layoutY="215.0" prefHeight="25.0" prefWidth="418.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER_RIGHT" layoutX="24.0" layoutY="168.0" prefHeight="27.0" prefWidth="116.0" text="IP : " textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="24.0" layoutY="221.0" prefHeight="27.0" prefWidth="116.0" text="Port : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_valider" layoutX="489.0" layoutY="333.0" mnemonicParsing="false" text="Valider" onAction="#connexion">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_quitter" layoutX="24.0" layoutY="333.0" mnemonicParsing="false" text="Quitter" onAction="#quitter">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_conjuguer" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="27.0" layoutY="26.0" text="Veuillez choisir un verbe à l'infinitif ainsi qu'un temps de conjugaison">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="234.0" layoutY="66.0" prefHeight="25.0" prefWidth="340.0" fx:id="tf_verbe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="72.0" prefHeight="27.0" prefWidth="201.0" text="Verbe à l'infinitif : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="125.0" prefHeight="17.0" prefWidth="201.0" text="Temps : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="234.0" layoutY="126.0" prefHeight="25.0" prefWidth="249.0" fx:id="cmb_temps"/>
+            <Label fx:id="lbl_result" layoutX="27.0" layoutY="162.0" prefHeight="173.0" prefWidth="547.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_conjuguer" layoutX="493.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Valider" onAction="#conjuguer" />
+            <Button fx:id="btn_quitter1" layoutX="27.0" layoutY="347.0" mnemonicParsing="false" text="Quitter" onAction="#quitter">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</StackPane>
