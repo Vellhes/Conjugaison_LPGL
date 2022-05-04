@@ -4,6 +4,9 @@ import java.rmi.RemoteException;
 
 import mvc.modele.Verbe;
 
+/**
+ * Classe permettant de récupérer les informations d'un verbe du troisème groupe finissant en "AÎTRE"
+ */
 public class VerbeGroupe3Aitre extends Verbe{
 	
 	public VerbeGroupe3Aitre(String verbe) throws RemoteException {

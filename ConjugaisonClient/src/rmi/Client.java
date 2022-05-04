@@ -8,6 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Classe permettant de démarrer l'affichage client de l'application sans se connecter au serveur
+ */
 public class Client extends Application  {
 	
 	@Override

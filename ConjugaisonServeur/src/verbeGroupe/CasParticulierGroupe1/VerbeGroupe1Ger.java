@@ -5,6 +5,9 @@ import java.rmi.RemoteException;
 import mvc.modele.Verbe;
 import verbeGroupe.VerbeGroupe1;
 
+/**
+ * Classe permettant de récupérer les informations d'un verbe du premier groupe finissant en "GER"
+ */
 public class VerbeGroupe1Ger extends VerbeGroupe1 {
 
 	public VerbeGroupe1Ger(String verbe) throws RemoteException {

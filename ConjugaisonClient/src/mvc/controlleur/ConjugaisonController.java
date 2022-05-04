@@ -25,6 +25,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import mvc.modele.VerbeInterface;
 
+/**
+ * Controlleur de la fenêtre de conjugaison
+ */
 public class ConjugaisonController implements Initializable {
 
 	@FXML
@@ -80,6 +83,9 @@ public class ConjugaisonController implements Initializable {
 		cmb_temps.getItems().add(futur);
 		cmb_temps.getItems().add(passeCompose);
 		
+		/**
+		 * mise en place des événèments clavier pour le panneau de connexion
+		 */
 		pane_connexion.setOnKeyPressed(new EventHandler<KeyEvent>() {
 			@Override
 			public void handle(KeyEvent ke) {
@@ -91,6 +97,9 @@ public class ConjugaisonController implements Initializable {
 			}
 		});
 		
+		/**
+		 * mise en place des événèments clavier pour le panneau de conjugaison
+		 */
 		pane_conjuguer.setOnKeyPressed(new EventHandler<KeyEvent>() {
 			@Override
 			public void handle(KeyEvent ke) {
@@ -104,7 +113,10 @@ public class ConjugaisonController implements Initializable {
 	}
 
 	
-	
+	/**
+	 * Méthode permettant de connecter le client au serveur grâce à l'IP et au port
+	 * si la connexion réussi, on affiche le panneau de conjugaison
+	 */
 	@FXML
 	private void connexion() {
 		String IP, port;
@@ -123,6 +135,9 @@ public class ConjugaisonController implements Initializable {
 		}
 	}
 	
+	/**
+	 * Méthode permettant de conjuguer un verbe et de l'afficher
+	 */
 	@FXML
 	private void conjuguer() {
 		String verbe, temps, result;
@@ -148,6 +163,9 @@ public class ConjugaisonController implements Initializable {
 		}
 	}
 	
+	/**
+	 * Méthode permettant de quitter l'application et de la fermer
+	 */
 	@FXML
 	private void quitter() {
 		alert = new Alert(AlertType.CONFIRMATION);

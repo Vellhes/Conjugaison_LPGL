@@ -5,7 +5,9 @@ import java.rmi.registry.LocateRegistry;
 
 import mvc.modele.VerbeConjugue;
 
-
+/**
+ * Classe permettant de démarrer le serveur de conjugaison
+ */
 public class Serveur {
 
 	public static void main (String[] argv) {

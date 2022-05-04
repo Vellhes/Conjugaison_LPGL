@@ -5,6 +5,9 @@ import java.rmi.RemoteException;
 import mvc.modele.Verbe;
 import verbeGroupe.VerbeGroupe1;
 
+/**
+ * Partie "Verbe Groupe 1" de la Chain Of Responsabilities
+ */
 public class VerbeGroupe1COR extends VerbeGroupeCOR {
 
 

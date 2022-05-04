@@ -19,7 +19,6 @@ public class VerbeConjugue extends UnicastRemoteObject implements VerbeInterface
 
 	public VerbeConjugue() throws RemoteException {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

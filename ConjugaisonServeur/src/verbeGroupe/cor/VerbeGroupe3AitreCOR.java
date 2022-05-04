@@ -5,6 +5,9 @@ import java.rmi.RemoteException;
 import mvc.modele.Verbe;
 import verbeGroupe.CasParticulierGroupe3.VerbeGroupe3Aitre;
 
+/**
+ * Partie "Verbe Groupe 3 AÎTRE" de la Chain Of Responsabilities
+ */
 public class VerbeGroupe3AitreCOR extends VerbeGroupeCOR {
 
 

@@ -4,6 +4,10 @@ import java.rmi.RemoteException;
 
 import mvc.modele.Verbe;
 
+/**
+ * Classe permettant de récupérer les informations d'un verbe du deuxième groupe sans cas particulier
+ */
+
 public class VerbeGroupe2 extends Verbe {
 	
 	public VerbeGroupe2(String verbe) throws RemoteException {
